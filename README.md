@@ -1,4 +1,4 @@
-This experiment tries to replicate the paper [Depth Pruning with Auxiliary Networks for TinyML](https://arxiv.org/abs/2204.10546)
+This experiment tries to replicate the paper [Depth Pruning with Auxiliary Networks for TinyML](https://arxiv.org/abs/2204.10546) .
 This experiment uses the CIFAR-10 dataset resized to 224x224 on MobileNet V1.
 The Pruned Network is trained with value initialized from the original network and with random initialization.
 ![Pruning](https://github.com/rrquizon1/Depth-Pruning-Replication/assets/70574862/9786bac8-1112-4018-9fe2-ceea8863e2ac)
