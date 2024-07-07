@@ -6,6 +6,6 @@ The Pruned Network is trained with values initialized from the original network 
 Results show that for CIFAR-10 dataset, even with random initialization, the pruned network shows competitive performance compared to the original netowrk. 
 
 With original network having 3.2M parameters with 89.73% accuracy and the pruned networks reduced to only 310k parameters with 88.80% (initialized values from original network) and 88.68% (random initialization) accuracy. This shows an effective pruning with around 90% reduction with less than 1 % reduction in accuracy.
-This reduction reduces memory requirements of the model and could potentially speed up inference.
+This reduction decreases memory requirements of the model and could potentially speed up inference.
 
 The Implementation of MobileNetV1 used in this experiment is from here: [Implement MobileNet-v1 in PyTorch](https://medium.com/@karuneshu21/implement-mobilenet-v1-in-pytorch-fd03a6618321)
