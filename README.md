@@ -1,7 +1,8 @@
 This experiment tries to replicate the paper [Depth Pruning with Auxiliary Networks for TinyML](https://arxiv.org/abs/2204.10546) .
 This experiment uses the CIFAR-10 dataset resized to 224x224 on MobileNet V1.
 The Pruned Network is trained with values initialized from the original network and with random initialization.
-![Pruning](https://github.com/rrquizon1/Depth-Pruning-Replication/assets/70574862/9786bac8-1112-4018-9fe2-ceea8863e2ac)
+![image](https://github.com/user-attachments/assets/edcc1381-4fd9-4f85-bdc4-427d663bb8df)
+
 
 Results show that for CIFAR-10 dataset, even with random initialization, the pruned network shows competitive performance compared to the original netowrk. 
 
