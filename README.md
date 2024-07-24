@@ -22,9 +22,6 @@ Using these two datasets, I noted an increase in accuracy after pruning the netw
 *  Pruning can act as regularization, preventing overfitting and improving accuracy in the network depending on the datasets it is used. This was not observed in the original paper, which used a keyword spotting dataset and on my previous experiment on CIFAR-10.
 *  Initialization values are crucial. The results show that randomly initializing the network's values leads to some improvement, but using values from the original pre-trained network results in a more significant improvement.
 
-Given time, I would like to explore how the number of blocks pruned affects the increase in accuracy, identifying the point at which accuracy begins to increase and when it starts to decrease.
-
-
 
 ## Reference Mobilenet V1 implementation
 The Implementation of MobileNetV1 used in this experiment is from here: [Implement MobileNet-v1 in PyTorch](https://medium.com/@karuneshu21/implement-mobilenet-v1-in-pytorch-fd03a6618321)
