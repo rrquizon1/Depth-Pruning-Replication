@@ -24,16 +24,16 @@ Using these two datasets, I noted an increase in accuracy after pruning the netw
 
 
 ## Performance of different number of blocks
-In addition to consistent performance on different datasets, I also checked how accuracy is affected by different number of blocks pruned. The graph below illustrates the relationship between the number of parameters, accuracy, and the number of blocks pruned.
-![image](https://github.com/user-attachments/assets/8f783499-6ba1-44fc-a91a-b5eb4c4a1a5c)
+In addition to consistent increase of performance on different datasets, I also checked how accuracy is affected by different number of blocks pruned. The graph below illustrates the relationship between the number of parameters, accuracy, and the number of blocks pruned.
+![image](https://github.com/user-attachments/assets/dc31bfe7-172a-4df2-b0da-e5405fbb4530)
 
 Notably, accuracy improved after pruning two blocks. The peak accuracy of around 81% was achieved when pruning either 7 or 10 blocks. Interestingly, pruning 7 blocks reduced the parameter count to just 310k, while pruning 10 blocks further reduced it to 43k. This reflects a 90% and 98% reduction in parameters, respectively, alongside an increase in performance.
 
 However, pruning 11 blocks marked the start of a decline in accuracy, which continued as more blocks were pruned.
 
-It's important to note that these results are specific to Imagenette, a small dataset. For better generalization and more robust conclusions, larger datasets should be used.
-
 This experiment highlights the delicate balance between model complexity and performance, showing that significant parameter reductions can still lead to performance gains, up to a certain point.
+
+It's important to note that these results are specific to Imagenette, a small dataset. For better generalization and more robust conclusions, larger datasets should be used.
 
 ## Reference Mobilenet V1 implementation
 The Implementation of MobileNetV1 used in this experiment is from here: [Implement MobileNet-v1 in PyTorch](https://medium.com/@karuneshu21/implement-mobilenet-v1-in-pytorch-fd03a6618321)
