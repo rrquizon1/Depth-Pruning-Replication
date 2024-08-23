@@ -24,7 +24,7 @@ Using these two datasets, I noted an increase in accuracy after pruning the netw
 
 
 ## Performance of different number of blocks
-I recently explored the impact of pruning different numbers of blocks on model performance. The graph below illustrates the relationship between the number of parameters, accuracy, and the number of blocks pruned.
+In addition to consistent performance on different datasets, I also checked how accuracy is affected by different number of blocks pruned. The graph below illustrates the relationship between the number of parameters, accuracy, and the number of blocks pruned.
 ![image](https://github.com/user-attachments/assets/8f783499-6ba1-44fc-a91a-b5eb4c4a1a5c)
 
 Notably, accuracy improved after pruning two blocks. The peak accuracy of around 81% was achieved when pruning either 7 or 10 blocks. Interestingly, pruning 7 blocks reduced the parameter count to just 310k, while pruning 10 blocks further reduced it to 43k. This reflects a 90% and 98% reduction in parameters, respectively, alongside an increase in performance.
