@@ -23,5 +23,17 @@ Using these two datasets, I noted an increase in accuracy after pruning the netw
 *  Initialization values are crucial. The results show that randomly initializing the network's values leads to some improvement, but using values from the original pre-trained network results in a more significant improvement.
 
 
+## Performance of different number of blocks
+I recently explored the impact of pruning different numbers of blocks on model performance. The graph below illustrates the relationship between the number of parameters, accuracy, and the number of blocks pruned.
+![image](https://github.com/user-attachments/assets/8f783499-6ba1-44fc-a91a-b5eb4c4a1a5c)
+
+Notably, accuracy improved after pruning two blocks. The peak accuracy of around 81% was achieved when pruning either 7 or 10 blocks. Interestingly, pruning 7 blocks reduced the parameter count to just 310k, while pruning 10 blocks further reduced it to 43k. This reflects a 90% and 98% reduction in parameters, respectively, alongside an increase in performance.
+
+However, pruning 11 blocks marked the start of a decline in accuracy, which continued as more blocks were pruned.
+
+It's important to note that these results are specific to Imagenette, a small dataset. For better generalization and more robust conclusions, larger datasets should be used.
+
+This experiment highlights the delicate balance between model complexity and performance, showing that significant parameter reductions can still lead to performance gains, up to a certain point.
+
 ## Reference Mobilenet V1 implementation
 The Implementation of MobileNetV1 used in this experiment is from here: [Implement MobileNet-v1 in PyTorch](https://medium.com/@karuneshu21/implement-mobilenet-v1-in-pytorch-fd03a6618321)
